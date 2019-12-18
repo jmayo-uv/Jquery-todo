@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title jQuery - Todo
+    //- link(rel="stylesheet", type="text/css", href="../../public/css/style.css")
+    style
+      include ../../public/css/style.css
+  body
+    section(class="container")
+      header(class="header")
+        h1(id="todo-title") todos
+        div(class="container-input-todo")
+          label >
+          input(type="text" id="input-todo" class="input-todo" placeholder="What needs to be done?" autofocus)
+      main(class="main-todo")
+        ul(class="todo-list")
+      footer(class="footer flex")
+        div(class="counter")
+        div(class="filter-options")
+          button(class="all") All
+          button(class="active") Active
+          button(class="completed") Completed
+        div(class="clear")
+          button(class="clear-all") Clear All
+    
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script
+      include ../../public/js/app.js

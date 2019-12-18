@@ -1,0 +1,122 @@
+/* :root {
+    font-size: 40px;
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px #000000 solid  */
+}
+
+body {
+    background-color: #f5f5f5;  
+    color: #a9a9a9;
+    display: flex;
+    justify-content: center;    
+}
+
+.container {
+    width: 600px;
+    text-align: center;  
+    background-color: #fefefe;
+}
+
+#todo-title {
+    background-color: #f5f5f5; 
+    color: #ead7d7;
+    font-size: 7em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px 0;
+    
+}
+
+.container-input-todo {
+    box-shadow: 1px 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-todo{
+    width: 90% ;
+    margin: 5px 0;
+    padding: 10px 5px;
+    outline: 0;
+    border: inherit;
+    background-color: inherit;
+    color: #73777d;
+    font-style: italic;
+    font-size: 1.5em;
+
+}
+
+.input-todo:focus{
+    color: #000;
+    font-style: normal;
+}
+
+.main-todo {
+    display: none; 
+    font-size: .6em;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2);    
+}
+
+
+.todo-list {
+    text-align: left;
+    list-style: none;
+    font-size: 2em;
+ }
+
+/* .todo-item {
+    display: flex;
+    width: 100%;
+} */
+
+.toggle{
+    align-self: left;
+    margin-left: 30px;
+}
+
+.todo-item-input {
+    width: 85%;
+    font-size: inherit;
+    border: 0;
+    margin: 4px 0;
+    font-style: italic;
+    padding: 10px 30px;
+    outline: 0;
+}
+
+.destroy {
+    font-size: 20px;
+    color: red;
+    background-color:transparent;
+    border: 0;
+    align-self: right;
+
+}
+
+.footer {
+    display: none;
+    justify-content: space-around;
+    background-color: #fefefe;
+    font-size: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #73777d;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+.footer > div > button {
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    padding: 3px;
+    border: 1px #fefefe solid;
+}
+
+.footer div >  button:hover {
+    color: inherit;
+    border: 1px #d8d8d8 solid;
+    border-radius: .2em;
+} 
+
